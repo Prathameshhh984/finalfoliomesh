@@ -1,0 +1,638 @@
+@import 'utilities.css';
+:root{
+    --primary:#d33d3d;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#5e0000;
+    --secondary:#070606;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+header{
+    background: var(--dark);
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+.container{
+    max-width:1152px;
+    padding:0 15px;
+    margin:0 auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1152px;
+    }
+  }
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right:2rem;
+    text-transform:uppercase;
+    transition:all .3s ease;
+    -webkit-transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -ms-transition:all .3s ease;
+    -o-transition:all .3s ease;
+}
+header nav .left a:hover{
+    color:var(--primary);
+}
+header nav {
+    padding:2rem 0;
+}
+header nav .branding{
+    margin-right:3rem;
+  
+    /* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0; /* Adjust padding to create space */
+    position: relative;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px; /* Add margin to move the image down */
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #444;
+}
+
+}
+.hero{
+    padding: 6px;rem 0;
+}
+.hero .left img{
+    width:400px;
+}
+.hero .right{
+    color:var(--pure);
+}
+.hero .right h6{
+    font-size:1.4rem;
+    color:var(--primary);
+    margin-bottom:0.5rem;
+}
+.hero .right h1{
+    font-size:4rem;
+    font-weight:100;
+    line-height:1.2;
+    margin-bottom:2rem;
+}
+.hero .right h1 span{
+    color:var(--primary);
+}
+.hero .right p{
+    line-height:1.9;
+    margin-bottom:2rem;
+}
+.hero .right {
+    margin-top:-7rem;
+}
+
+section{
+    padding:6rem 0;
+}
+section.about .about-me-img{
+    height:450px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size:1.6rem;
+    font-weight:400;
+}
+section.about h1 span{
+    color:var(--primary);
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom:1rem;
+    font-weight: 400;
+}
+
+section.about p{
+    font-family:'Lato', sans-serif;
+    color:var(--ternary);
+    line-height: 1.8;
+    margin-bottom:2rem;
+}
+section.about .social{
+    display:flex;
+}
+section.about .social a{
+    background:var(--dark);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right:0.6rem;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+section.about .social a:hover{
+    background:var(--primary);
+}
+section.about .social a img{
+    width:100%;
+    height:100%;
+    padding:0.5rem;
+}
+
+.section-heading{
+   color:var(--secondary); 
+   text-align: center;
+   margin-bottom:1rem;
+   line-height: 0.5;
+}
+.section-heading span{
+    color:var(--primary);
+}
+.section-heading + p{
+   color:var(--ternary);
+   font-family:'Lato', sans-serif;
+   margin-bottom:8rem;
+    text-align: center;
+}
+
+
+section.freelancer{
+    text-align: center;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/batman.jpg);
+    color:var(--pure);
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding-bottom:14rem;
+}
+section.freelancer h1{
+    font-size:3rem;
+    margin-bottom:0.5rem;
+}
+section.freelancer p{
+    font-size:1.3rem;
+    margin-bottom: 2rem;
+    font-family:'Lato', sans-serif;
+}
+
+section.reviews .slider .slide img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit:cover;
+    margin-bottom:2rem;
+}
+section.reviews .slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:0 10rem;
+
+}
+section.reviews .slider .slide p{
+    font-family: 'Lato', sans-serif;
+    color:var(--ternary);
+    margin-bottom: 1rem;
+}
+section.reviews .slider .slide span{
+    font-size: 0.8rem;
+}
+section.reviews .slider-dots .dots{
+    list-style-type:none;
+    display:flex!important;
+    justify-content: center;
+}
+section.reviews .slider-dots{
+    margin-top:3rem;
+}
+
+section.reviews .slider-dots button{
+    font-size:0;
+    width:8px;
+    height:5px;
+    margin-right:0.3rem;
+    border: none;
+    outline:none;
+    background:var(--ternary);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+}
+section.reviews .dots li.slick-active button{
+    background:var(--primary);
+    width:20px;
+}
+
+/* Container for all the cards */
+.card-wrapper {
+    display: grid; /* Arranges the cards in a grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Adds space between each card */
+    justify-content: center; /* Centers the cards in the container */
+    margin-top: 20px; /* Adds space above the grid */
+}
+
+/* Each card */
+.card {
+    position: relative; /* Allows overlay positioning */
+    overflow: hidden; /* Hides anything that goes outside the card */
+    border-radius: 10px; /* Rounds the corners of the card */
+    cursor: pointer; /* Shows a pointer when hovering */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation for scaling and shadow */
+}
+
+/* Image inside each card */
+.card img {
+    width: 100%; /* Makes the image fill the card's width */
+    height: auto; /* Keeps the aspect ratio of the image */
+    display: block; /* Ensures the image is displayed as a block element */
+    border-radius: 10px; /* Matches the card's rounded corners */
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow for a 3D effect */
+}
+
+/* Overlay on top of the card */
+.overlay {
+    position: absolute; /* Positions it on top of the card */
+    top: 0; /* Aligns it to the top */
+    left: 0; /* Aligns it to the left */
+    width: 100%; /* Makes it cover the entire card */
+    height: 100%; /* Makes it cover the entire card */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark, semi-transparent background */
+    display: flex; /* Uses flexbox to center content */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    color: #fff; /* White text */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s; /* Smooth transition for appearing */
+}
+
+/* Make the overlay appear when hovering over the card */
+.card:hover .overlay {
+    opacity: 1; /* Shows the overlay */
+}
+
+/* Styling for elements inside the overlay */
+.overlay span, .overlay a {
+    margin: 5px; /* Adds a little space around text and links */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .card-wrapper {
+        grid-template-columns: repeat(2, 1fr); /* Changes to 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-wrapper {
+        grid-template-columns: 1fr; /* Changes to 1 column for very small screens */
+    }
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif; /* Change this to the font you prefer */
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+/* Contact section */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center; /* Center-aligns content */
+}
+
+.contact-title {
+    color: #d9534f; /* Red color for the heading */
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 15px;
+}
+
+.intro-text {
+    margin-bottom: 20px;
+    font-size: 1.2rem; /* Slightly larger size for better readability */
+}
+
+/* Contact info styling */
+.contact-info {
+    margin-bottom: 30px;
+    text-align: left; /* Aligns contact info to the left */
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1rem; /* Slightly larger for better readability */
+}
+
+/* Form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-aligns form content */
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 15px; /* More padding for a better touch */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.1rem; /* Slightly larger text in input fields */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Limits width */
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #d9534f; /* Red border on focus */
+}
+
+.contact-form button {
+    padding: 15px 20px;
+    background-color: #d9534f; /* Red button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem; /* Slightly larger button text */
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #c9302c; /* Darker red when hovered */
+}
+
+footer{
+    background:var(--dark);
+    text-align: center;
+    padding:5rem 0;
+}
+footer .footer-logo{
+    margin-bottom:3rem;
+    width:150px;
+}
+footer .footer-socials a{
+    margin-right:1rem;
+}
+footer .footer-socials{
+    margin-bottom:3rem;
+    margin-right:-1rem;
+}
+footer .copyright{
+    color:var(--ternary);
+}
+
+
+.site-main-wrapper{
+    position:relative;
+}
+.hamberger{
+    position:absolute;
+    top:40px;
+    right:40px;
+    z-index:11;
+    background:none;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    display:none;
+}
+.hamberger img{
+    width:30px;
+}
+
+.mobile-nav{
+   position: fixed;
+   top:0;
+   left:0;
+   z-index:1001;
+   background:var(--light);
+   width:100%;
+   height:100%;
+   padding:2rem;
+   padding-top:5rem;
+   transform: translateX(-100%);
+   -webkit-transform: translateX(-100%);
+   -moz-transform: translateX(-100%);
+   -ms-transform: translateX(-100%);
+   -o-transform: translateX(-100%);
+   transition:all .5s ease-in-out;
+   -webkit-transition:all .5s ease-in-out;
+   -moz-transition:all .5s ease-in-out;
+   -ms-transition:all .5s ease-in-out;
+   -o-transition:all .5s ease-in-out;
+}
+.open{
+    transform:translateX(0);
+    -webkit-transform:translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform:translateX(0);
+    -o-transform:translateX(0);
+}
+.times{
+   position:fixed;
+   top:30px;
+   right:30px;
+   border: none;
+   background:none;
+   outline:none;
+   cursor: pointer; 
+}
+.times img{
+    width:30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+.mobile-nav ul li a{
+    color:var(--secondary);
+    text-decoration:none;
+    font-size: 2rem;
+}
+
+@media (max-width:1024px){
+    header #main-nav{
+        display:none;
+    }
+    .hamberger{
+        display: block;
+    }
+    .hero .left img{
+        width:260px;
+    }
+    .hero .right h1{
+        font-size: 3rem;
+    }
+    .hero{
+        padding-top:10rem;
+    }
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
+    }
+    section.about .about-me-img{
+        height: 360px;
+    }
+    section.services .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.work .card-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+    section.blog .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.blog{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%);
+    }
+}
+
+@media (max-width:576px){
+    .hero{
+        flex-direction: column;
+    }
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
+    }
+    .hero .right{
+        position: absolute;
+        top:260px;
+        padding:0 1rem;
+        background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+    }
+    .hero .left{
+        margin-top:-5rem;
+        margin-right: -9rem;
+        padding-bottom:4rem;
+    }
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+    .about .right{
+        text-align: center;
+        margin-top:2rem;
+    }
+    .about .right .social{
+        justify-content: center;
+    }
+    section{
+        padding: 4rem 0;
+    }
+    section.services .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top:6rem;
+    }
+    section.freelancer h1{
+        line-height:1.2;
+    }
+    section.freelancer{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+        padding-bottom: 8rem;
+    }
+    section.reviews .slider .slide{
+        padding:0;
+    }
+    .section-heading + p{
+        margin-bottom: 3rem;
+    }
+    section.work .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    section.contact .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    section.contact .input-wrap{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
